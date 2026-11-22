@@ -1,5 +1,7 @@
 from pathlib import Path
 
+import pytest
+
 from eval.run_eval import ROOT, display_path
 
 
@@ -12,6 +14,7 @@ def test_display_path_handles_paths_inside_outside_and_relative(tmp_path, monkey
 
 
 def test_agent_grader_rules():
+    pytest.importorskip("langchain")
     from eval.agent_eval import grade, summarize
 
     case = {"expected_tools": ["lookup"], "forbidden_tools": ["cancel"], "max_calls": {"lookup": 2},
