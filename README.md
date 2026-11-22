@@ -1,7 +1,7 @@
 # SSA Open Data & Public Services MCP Server
 
 [![CI](https://github.com/ssa-qz/mcp-hackathon/actions/workflows/ci.yml/badge.svg)](https://github.com/ssa-qz/mcp-hackathon/actions/workflows/ci.yml)
-[![Python 3.10+](https://img.shields.io/badge/python-3.10+-blue.svg)](https://www.python.org/downloads/)
+[![Python 3.11+](https://img.shields.io/badge/python-3.11+-blue.svg)](https://www.python.org/downloads/)
 [![MCP 2025-11-25](https://img.shields.io/badge/MCP-2025--11--25-green.svg)](https://modelcontextprotocol.io/)
 
 A Model Context Protocol (MCP) server that lets AI agents answer questions with U.S. Social Security
@@ -38,7 +38,7 @@ The server gives agents a governed set of tools for these tasks:
 |---|---|
 | Agent eval: an LLM agent answers 20 plain-language questions (4 adversarial) × 5 trials using only the server's own instructions | **100/100 runs**, 20/20 cases consistent; no-tool baseline 50%; server before guardrails 78.6% |
 | Ground-truth tool eval: 35 cases checked against an independent re-read of the raw files, plus live APIs | **35/35** |
-| Unit, integration, and transport tests | **122 passing** (CI on Python 3.10–3.13) |
+| Unit, integration, and transport tests | **122 passing** (CI on Python 3.11–3.13) |
 | Local dataset queries (p50) | 7–32 ms (all-time leaderboard: 7 s → 10 ms after pre-aggregation) |
 
 ---
