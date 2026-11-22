@@ -1,0 +1,17 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.ssa-qz/ssa-mcp-server",
+  "title": "SSA Open Data & Public Services Server",
+  "description": "SSA national baby-name data (1880-2025), the SSA field-office directory, Census address-to-jurisdiction lookup, statutory COLA from live BLS CPI-W, and a sandbox field-office appointment workflow.",
+  "version": "1.0.0",
+  "repository": {
+    "url": "https://github.com/ssa-qz/mcp-hackathon",
+    "source": "github"
+  },
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://ssa-mcp-server.app.cloud.gov/mcp"
+    }
+  ]
+}

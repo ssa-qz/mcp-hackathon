@@ -1,0 +1,369 @@
+{
+  "generated_at": "2026-11-09T23:55:48+00:00",
+  "environment": {
+    "python": "3.13.7",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "fastmcp": "4.0.7"
+  },
+  "settings": {
+    "iterations": 10,
+    "live_iterations": 2,
+    "skip_live": false
+  },
+  "summary": {
+    "passed": 35,
+    "total": 35
+  },
+  "cases": [
+    {
+      "id": "top10_female_2025",
+      "category": "dataset",
+      "tool": "get_top_names_by_year",
+      "passed": true,
+      "failures": [],
+      "samples": 10,
+      "p50_ms": 15.31,
+      "p95_ms": 76.84
+    },
+    {
+      "id": "mary_full_history",
+      "category": "dataset",
+      "tool": "get_baby_name_popularity",
+      "passed": true,
+      "failures": [],
+      "samples": 10,
+      "p50_ms": 13.92,
+      "p95_ms": 16.4
+    },
+    {
+      "id": "liam_peak_decade",
+      "category": "dataset",
+      "tool": "get_name_trend",
+      "passed": true,
+      "failures": [],
+      "samples": 10,
+      "p50_ms": 11.18,
+      "p95_ms": 22.01
+    },
+    {
+      "id": "compare_three_names",
+      "category": "dataset",
+      "tool": "compare_names",
+      "passed": true,
+      "failures": [],
+      "samples": 10,
+      "p50_ms": 31.74,
+      "p95_ms": 685.06
+    },
+    {
+      "id": "all_time_top10_female",
+      "category": "dataset",
+      "tool": "get_all_time_popular_names",
+      "passed": true,
+      "failures": [],
+      "samples": 10,
+      "p50_ms": 7.48,
+      "p95_ms": 9.95
+    },
+    {
+      "id": "unknown_name_not_found",
+      "category": "dataset",
+      "tool": "get_baby_name_popularity",
+      "passed": true,
+      "failures": [],
+      "samples": 10,
+      "p50_ms": 7.4,
+      "p95_ms": 13.21
+    },
+    {
+      "id": "nevada_offices_complete",
+      "category": "service_read",
+      "tool": "find_field_offices",
+      "passed": true,
+      "failures": [],
+      "samples": 10,
+      "p50_ms": 16.03,
+      "p95_ms": 22.46
+    },
+    {
+      "id": "office_a00_details",
+      "category": "service_read",
+      "tool": "get_field_office_details",
+      "passed": true,
+      "failures": [],
+      "samples": 10,
+      "p50_ms": 19.36,
+      "p95_ms": 64.32
+    },
+    {
+      "id": "leading_zero_zip_preserved",
+      "category": "service_read",
+      "tool": "find_field_offices",
+      "passed": true,
+      "failures": [],
+      "samples": 10,
+      "p50_ms": 16.5,
+      "p95_ms": 21.6
+    },
+    {
+      "id": "unknown_office_not_found",
+      "category": "service_read",
+      "tool": "get_field_office_details",
+      "passed": true,
+      "failures": [],
+      "samples": 10,
+      "p50_ms": 16.66,
+      "p95_ms": 19.89
+    },
+    {
+      "id": "reject_year_before_coverage",
+      "category": "error_handling",
+      "tool": "get_top_names_by_year",
+      "passed": true,
+      "failures": [],
+      "samples": 10,
+      "p50_ms": 2.67,
+      "p95_ms": 6.03
+    },
+    {
+      "id": "reject_oversized_top_n",
+      "category": "error_handling",
+      "tool": "get_all_time_popular_names",
+      "passed": true,
+      "failures": [],
+      "samples": 10,
+      "p50_ms": 2.93,
+      "p95_ms": 4.68
+    },
+    {
+      "id": "reject_21_name_comparison",
+      "category": "error_handling",
+      "tool": "compare_names",
+      "passed": true,
+      "failures": [],
+      "samples": 10,
+      "p50_ms": 2.25,
+      "p95_ms": 3.76
+    },
+    {
+      "id": "reject_reversed_year_range",
+      "category": "error_handling",
+      "tool": "get_baby_name_popularity",
+      "passed": true,
+      "failures": [],
+      "samples": 10,
+      "p50_ms": 1.4,
+      "p95_ms": 2.19
+    },
+    {
+      "id": "reject_bad_zip_format",
+      "category": "error_handling",
+      "tool": "find_field_offices",
+      "passed": true,
+      "failures": [],
+      "samples": 10,
+      "p50_ms": 2.01,
+      "p95_ms": 2.53
+    },
+    {
+      "id": "reject_weekend_booking",
+      "category": "error_handling",
+      "tool": "book_field_office_appointment",
+      "passed": true,
+      "failures": [],
+      "samples": 1,
+      "p50_ms": 2.93,
+      "p95_ms": 2.93
+    },
+    {
+      "id": "reject_past_date_booking",
+      "category": "error_handling",
+      "tool": "book_field_office_appointment",
+      "passed": true,
+      "failures": [],
+      "samples": 1,
+      "p50_ms": 2.49,
+      "p95_ms": 2.49
+    },
+    {
+      "id": "reject_slot_outside_hours",
+      "category": "error_handling",
+      "tool": "book_field_office_appointment",
+      "passed": true,
+      "failures": [],
+      "samples": 1,
+      "p50_ms": 17.2,
+      "p95_ms": 17.2
+    },
+    {
+      "id": "reject_unknown_office_booking",
+      "category": "error_handling",
+      "tool": "book_field_office_appointment",
+      "passed": true,
+      "failures": [],
+      "samples": 1,
+      "p50_ms": 19.71,
+      "p95_ms": 19.71
+    },
+    {
+      "id": "reject_malformed_time_slot",
+      "category": "error_handling",
+      "tool": "book_field_office_appointment",
+      "passed": true,
+      "failures": [],
+      "samples": 1,
+      "p50_ms": 2.48,
+      "p95_ms": 2.48
+    },
+    {
+      "id": "reject_oversized_notes",
+      "category": "error_handling",
+      "tool": "book_field_office_appointment",
+      "passed": true,
+      "failures": [],
+      "samples": 1,
+      "p50_ms": 2.29,
+      "p95_ms": 2.29
+    },
+    {
+      "id": "census_geocode_henderson",
+      "category": "live",
+      "tool": "geocode_address",
+      "passed": true,
+      "failures": [],
+      "samples": 2,
+      "p50_ms": 2074.71,
+      "p95_ms": 2237.1
+    },
+    {
+      "id": "census_unmatched_address",
+      "category": "live",
+      "tool": "geocode_address",
+      "passed": true,
+      "failures": [],
+      "samples": 2,
+      "p50_ms": 1918.11,
+      "p95_ms": 1991.71
+    },
+    {
+      "id": "bls_cpi_w_six_months",
+      "category": "live",
+      "tool": "get_cpi_cola_indicators",
+      "passed": true,
+      "failures": [],
+      "samples": 2,
+      "p50_ms": 843.76,
+      "p95_ms": 1601.02
+    },
+    {
+      "id": "cola_matches_statutory_formula",
+      "category": "live",
+      "tool": "estimate_social_security_cola",
+      "passed": true,
+      "failures": [],
+      "samples": 2,
+      "p50_ms": 2.91,
+      "p95_ms": 3.95
+    },
+    {
+      "id": "offices_for_resident_address",
+      "category": "live",
+      "tool": "find_offices_near_address",
+      "passed": true,
+      "failures": [],
+      "samples": 2,
+      "p50_ms": 1845.91,
+      "p95_ms": 1896.91
+    },
+    {
+      "id": "book_appointment",
+      "category": "service_write",
+      "tool": "book_field_office_appointment",
+      "passed": true,
+      "failures": [],
+      "samples": 1,
+      "p50_ms": 97.52,
+      "p95_ms": 97.52
+    },
+    {
+      "id": "reject_double_booking",
+      "category": "service_write",
+      "tool": "book_field_office_appointment",
+      "passed": true,
+      "failures": [],
+      "samples": 1,
+      "p50_ms": 44.88,
+      "p95_ms": 44.88
+    },
+    {
+      "id": "wrong_phone_hides_record",
+      "category": "service_write",
+      "tool": "lookup_field_office_appointment",
+      "passed": true,
+      "failures": [],
+      "samples": 1,
+      "p50_ms": 5.54,
+      "p95_ms": 5.54
+    },
+    {
+      "id": "wrong_phone_cannot_cancel",
+      "category": "service_write",
+      "tool": "cancel_field_office_appointment",
+      "passed": true,
+      "failures": [],
+      "samples": 1,
+      "p50_ms": 8.84,
+      "p95_ms": 8.84
+    },
+    {
+      "id": "lookup_confirmed",
+      "category": "service_write",
+      "tool": "lookup_field_office_appointment",
+      "passed": true,
+      "failures": [],
+      "samples": 1,
+      "p50_ms": 4.7,
+      "p95_ms": 4.7
+    },
+    {
+      "id": "cancel_appointment",
+      "category": "service_write",
+      "tool": "cancel_field_office_appointment",
+      "passed": true,
+      "failures": [],
+      "samples": 1,
+      "p50_ms": 16.8,
+      "p95_ms": 16.8
+    },
+    {
+      "id": "lookup_cancelled",
+      "category": "service_write",
+      "tool": "lookup_field_office_appointment",
+      "passed": true,
+      "failures": [],
+      "samples": 1,
+      "p50_ms": 6.12,
+      "p95_ms": 6.12
+    },
+    {
+      "id": "cancel_is_idempotent",
+      "category": "service_write",
+      "tool": "cancel_field_office_appointment",
+      "passed": true,
+      "failures": [],
+      "samples": 1,
+      "p50_ms": 10.39,
+      "p95_ms": 10.39
+    },
+    {
+      "id": "lookup_unknown_code",
+      "category": "service_write",
+      "tool": "lookup_field_office_appointment",
+      "passed": true,
+      "failures": [],
+      "samples": 1,
+      "p50_ms": 6.78,
+      "p95_ms": 6.78
+    }
+  ]
+}

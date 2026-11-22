@@ -1,0 +1,16 @@
+---
+applications:
+  - name: ssa-mcp-server
+    memory: 1G
+    disk_quota: 1G
+    instances: 1
+    buildpacks:
+      - python_buildpack
+    command: python scripts/baby_name_ingest.py && python main.py --transport http --port $PORT --host 0.0.0.0
+    routes:
+      - route: ssa-mcp-server.app.cloud.gov
+    env:
+      MCP_TRANSPORT: http
+      # Must match the public route below, or the MCP endpoint returns 400 Invalid host header.
+      MCP_ALLOWED_HOSTS: ssa-mcp-server.app.cloud.gov
+      PYTHONUNBUFFERED: "true"
