@@ -4,7 +4,7 @@ From clone to a connected MCP client in about five minutes.
 
 ## 1. Install
 
-Requires Python 3.10+ and Git.
+Requires Python 3.11+ and Git.
 
 ```bash
 git clone https://github.com/ssa-qz/mcp-hackathon.git
