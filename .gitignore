@@ -1,0 +1,36 @@
+# Local secrets
+.env
+.env.*
+!.env.example
+
+# Virtual environments
+.venv/
+venv/
+
+# Generated SQLite databases and sidecars (build locally from public source data)
+data/*.db
+data/*.db-wal
+data/*.db-shm
+
+# Python, tests, and lint caches
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.coverage
+htmlcov/
+
+# Packaging/build output
+build/
+dist/
+*.egg-info/
+
+# Local editor and OS files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Node.js dependencies (e.g. npx-installed MCP Inspector)
+node_modules/
